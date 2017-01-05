@@ -1,0 +1,43 @@
+{
+  "name": "barebones-coffee",
+  "version": "1.0.0",
+  "description": "CoffeeScript HTML5 Barebones Project Template",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register",
+    "watch-test": "mocha --compilers coffee:coffee-script/register --watch",
+    "lint": "gulp lint",
+    "clobber": "gulp clobber",
+    "start": "gulp",
+    "build": "gulp build",
+    "dist": "NODE_ENV=production && gulp build",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RichardMarks/barebones-coffee.git"
+  },
+  "author": "Richard Marks <ccpsceo@gmail.com> (http://www.ccpssolutions.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "chai": "^3.5.0",
+    "coffee-script": "^1.12.2",
+    "coffeeify": "^2.1.0",
+    "coffeelint": "^1.16.0",
+    "gulp": "^3.9.1",
+    "gulp-coffeeify": "^0.1.8",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.5.4",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
